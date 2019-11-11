@@ -33,10 +33,11 @@ img {
     line-height: 0;
   }
 
-  .dino:nth-child(3),
+  .dino:nth-child(2),
   .dino:nth-child(4) {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 25em) {
@@ -45,22 +46,28 @@ img {
     width: 50%;
   }
 
-  .dino:nth-child(3),
+  .dino:nth-child(2),
   .dino:nth-child(4) {
     display: flex;
+    flex-wrap: wrap;
   }
-}
 
+}
 
 @media only screen and (min-width: 38em) {
 
   .dino-wrap {
-  flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  .dino {
+    width: 33.333%;
   }
 
   .dino:first-child {
     display: none;
   }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -68,4 +75,9 @@ img {
   .dino:first-child {
     display: flex;
   }
+
+  .dino {
+    width: 25%;
+  }
+
 }
