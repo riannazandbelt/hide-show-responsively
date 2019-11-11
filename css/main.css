@@ -41,15 +41,31 @@ img {
 
 @media only screen and (min-width: 25em) {
 
+  .dino {
+    width: 50%;
+  }
+
+  .dino:nth-child(3),
+  .dino:nth-child(4) {
+    display: flex;
+  }
 }
 
 
 @media only screen and (min-width: 38em) {
 
+  .dino-wrap {
+  flex-wrap: nowrap;
+  }
 
-
+  .dino:first-child {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
+  .dino:first-child {
+    display: flex;
+  }
 }
